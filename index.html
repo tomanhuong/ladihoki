@@ -525,17 +525,14 @@ body::before {
 }
 .hero-image-wrap {
   position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 20px 60px -20px rgba(74,48,34,0.3);
-  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
-.hero-image-wrap::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 60%, rgba(44,26,14,0.15) 100%);
-  pointer-events: none;
+.hero-image-wrap img { 
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
 }
 
 /* ============ SECTION 2: CÂU HỎI CHẠM / PHÉP TÍNH ============ */
@@ -2041,8 +2038,8 @@ blockquote.khacdau-close { display: none; }
       <iframe src="https://www.youtube.com/embed/nFFIfI-raWg" title="Buổi trò chuyện thật giữa anh Nhưỡng và bố" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="video-caption-block fade-up">
-      <p>Đây là buổi trò chuyện giữa anh Nhưỡng và bố — buổi đầu tiên trong hành trình viết hồi ký.<br>Không ai biết nói gì tiếp theo. Đó là lý do nó chân thật đến vậy.</p>
-      <p style="font-size:1.0625rem; color:var(--text); font-style:normal; font-weight:500;">Khóa học HOKI dạy bạn tạo ra những khoảnh khắc như thế này — với bố mẹ của bạn, trong 10 tiếng.</p>
+      <p>Đây là buổi trò chuyện giữa anh Nhưỡng và bố — buổi đầu tiên trong hành trình viết hồi ký.</p>
+      <p style="font-size:1.0625rem; color:var(--text); font-style:normal; font-weight:500;">Khóa học HOKI đồng hành cùng bạn tạo ra những khoảnh khắc như thế này — với bố mẹ của bạn, trong 10 tiếng.</p>
       <a href="https://hoc.hoiky.vn/login" class="cta" style="margin-top:0.5rem;">Đăng ký miễn phí — bắt đầu ngay hôm nay</a>
       <div class="hero-cta-hint" style="justify-content:center;margin-top:0.75rem;">
         <span class="dot"></span>
@@ -2086,7 +2083,7 @@ blockquote.khacdau-close { display: none; }
       <p>Từ đó HOKI ra đời — không phải như một khóa học viết văn, mà như một phương pháp để người con lần đầu tiên <strong>thực sự ngồi xuống lắng nghe</strong> cuộc đời bố mẹ.</p>
       <div class="trust-quote">
         <p>"Không phải thời gian bạn dành cho bố mẹ. Mà là chất lượng của những lần ngồi lại đó."</p>
-        <span>— Toma Nhưỡng, Founder HOKI · Action Learning Coach (Chuẩn ICF) · Huấn luyện viên Năng suất X3</span>
+        <span>— Toma Nhưỡng, Founder HOKI</span>
       </div>
     </div>
   </div>
@@ -2107,7 +2104,7 @@ blockquote.khacdau-close { display: none; }
       <div class="tangible-card">
         <div class="belief-old">"Đời bố mẹ mình bình thường, có gì đáng viết"</div>
         <h3>→ "Không có đời nào bình thường"</h3>
-        <p>Chỉ có đời <strong>CHƯA ĐƯỢC HỎI</strong> đúng cách. HOKI dạy bạn cách hỏi — để câu chuyện đời thường trở thành cuốn sách cả nhà rơi nước mắt.</p>
+        <p>Chỉ có đời <strong>CHƯA ĐƯỢC HỎI</strong> đúng cách. HOKI đồng hành cùng bạn cách hỏi — để câu chuyện đời thường trở thành cuốn sách cả nhà rơi nước mắt.</p>
       </div>
       <div class="tangible-card">
         <div class="belief-old">"Mình không biết viết văn"</div>
@@ -2427,15 +2424,15 @@ blockquote.khacdau-close { display: none; }
     <!-- FOOTER -->
     <div class="footer" style="text-align:center;margin-top:4rem;">
       <div class="footer-logo">HOKI · Hồi Ký Từ Tâm</div>
-      <div class="footer-tagline">Tặng di sản · Giữ yêu thương</div>
-      <div class="footer-contact">
-        <a href="mailto:hoiky.vietnam@gmail.com">hoiky.vietnam@gmail.com</a>
-        <a href="https://hoc.hoiky.vn">hoc.hoiky.vn</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/groups/1167019918453619" class="social-link" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          Cộng đồng HOKI
+    <div class="footer-tagline">Tặng di sản · Giữ yêu thương</div>
+    <div class="footer-contact">
+      <a href="mailto:hoikytutam@gmail.com">hoikytutam@gmail.com</a>
+      <a href="https://hoc.hoiky.vn">hoc.hoiky.vn</a>
+    </div>
+    <div class="footer-social">
+        <a href="https://zalo.me/g/b2pfuunca2fiwjjr8puk" class="social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          Nhóm Zalo HOKI
         </a>
       </div>
       <div class="footer-copyright">© 2025 HOKI — Hồi Ký Từ Tâm. All rights reserved.</div>
